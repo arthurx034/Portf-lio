@@ -1,66 +1,71 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arthur Ribeiro | Portfólio | Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <div class="menu">
-            <span>
-                <a href="index.html">
-                    <img src="" alt="" id="img-perfil">
-                    <h3>Arthur Ribeiro</h3>
-                </a>
-            </span>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Lar</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Projetos</a></li>
-                    <li><a href="">Contato</a></li>
+    <!-- Início do cabeçalho -->
+    <header id="header" class="header-container">
+        <div class="menu-container">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="assets/img/fotoProfissional.jpg" alt="Foto de Arthur Ribeiro" id="img-perfil" />
+                </div>
+                <div class="logo-text">
+                    <h1>Arthur Ribeiro</h1>
+                </div>
+            </div>
+
+            <nav id="main-nav" class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Lar</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
-        <section>
-            <aside>
-                <div class="icons-aside">
-                    <a href="" class="icons-links">
-                        <img src="icons/linkedin-dark.svg" alt="icon-linkedin">
+    <!-- Fim do cabeçalho -->
+
+    <!-- Início do conteúdo principal -->
+    <main id="main-content">
+        <section id="social-section">
+            <aside class="social-links">
+                <div class="icon-box">
+                    <a href="https://www.linkedin.com/in/arthur-ribeiro-rodrigues/" target="_blank" class="social-link">
+                        <img src="assets/icons/linkedin-dark.svg" alt="LinkedIn" />
                     </a>
                 </div>
-                <div class="icons-aside">
-                    <a href="" class="icons-links">
-                        <img src="icons/twitter-dark.svg" alt="icon-twitter">
+
+                <div class="icon-box">
+                    <a href="https://github.com/arthurx034" target="_blank" class="social-link">
+                        <img src="assets/icons/github-dark.svg" alt="GitHub" />
                     </a>
                 </div>
-                <div class="icons-aside">
-                    <a href="" class="icons-links">
-                        <img src="icons/yt-dark.svg" alt="icon-yt">
-                    </a>
-                </div>
-                <div class="icons-aside">
-                    <a href="" class="icons-links">
-                        <img src="icons/github-dark.svg" alt="icon-twitter">
-                    </a>
-                </div>
-                <div class="icons-aside">
-                    <a href="" class="icons-links">
-                        <img src="icons/book-dark.svg" alt="icon-twitter">
+
+                <div class="icon-box">
+                    <a href="https://dev.to/arthurx034" target="_blank" class="social-link">
+                        <img src="assets/icons/book-dark.svg" alt="Dev.to" />
                     </a>
                 </div>
             </aside>
         </section>
     </main>
+    <!-- Fim do conteúdo principal -->
 </body>
 
 </html>
