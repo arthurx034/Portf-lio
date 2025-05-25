@@ -74,8 +74,6 @@ a {
     flex-wrap: wrap;
 }
 
-
-
 /* Aside com ícones sociais */
 #social-section aside.social-links {
     position: fixed;
@@ -102,7 +100,7 @@ a {
 }
 
 .social-link:hover {
-    background: rgba(120, 67, 233, 0.2);
+    background: rgba(0, 153, 255, 0.268);
     color: #7843e9;
 }
 
@@ -111,6 +109,86 @@ main {
     background-color: rgb(237, 237, 237);
     color: rgb(255, 255, 255);
     min-height: 100vh;
+}
+
+/* inicio do menu com design bonito */
+
+.nav-link {
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    transform: translateY(-3px);
+    transition: transform 0.3s ease;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: #0048ff;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::before {
+    transform: scaleY(1);
+}
+
+/* final do menu com design bonito */
+
+#conteudo {
+    color: black;
+}
+
+.home-hero_container {
+    text-align: center;
+    padding: 10rem;
+}
+
+.heading-primary {
+    font-size: 44px;
+    text-transform: uppercase;
+}
+
+.home-hero_info {
+    padding: 3rem;
+    max-width: 80rem;
+}
+
+.text-primary {
+    color: #333;
+    font-size: 2.2rem;
+    width: 100%;
+    line-height: 1.6;
+}
+
+.home-hero_cta {
+    margin-top: 2rem;
+}
+
+.btn--bg {
+    padding: 1.5rem 6rem;
+    font-size: 1.5rem;
+}
+
+.btn {
+    color: white;
+    background: #002aff;
+    text-transform: uppercase;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    transition: transform .3s;
 }
 
 /* ========== MEDIA QUERIES ========== */
@@ -139,6 +217,23 @@ main {
         transform: none;
         flex-direction: row;
     }
+
+    .heading-primary {
+        font-size: 28px;
+    }
+
+    .text-primary {
+        font-size: 1.4rem;
+    }
+
+    .home-hero_cta {
+        margin-top: .5rem;
+    }
+
+    .btn--bg {
+        padding: 1.2rem 4rem;
+        font-size: 1.2rem;
+    }
 }
 
 /* Celulares (≤ 768px) */
@@ -161,19 +256,37 @@ main {
     }
 
     #social-section aside.social-links {
-        position: static;
-        margin-top: 2rem;
-        justify-content: center;
+        top: auto;
+        bottom: 1rem;
+        left: 1rem;
+        transform: none;
+        flex-direction: row;
     }
 
     main {
         padding: 1rem;
     }
 
-    #social-section aside.social-links {
-        display: none;
+    .home-hero_container {
+        padding: 5rem;
     }
 
+    .heading-primary {
+        font-size: 25px;
+    }
+
+    .home-hero_info {
+        padding: 1.5rem;
+    }
+
+    .home-hero_cta {
+        margin-top: 1.5rem;
+    }
+
+    .btn--bg {
+        padding: 1.4rem 4rem;
+        font-size: 1.2rem;
+    }
 }
 
 /* Celulares pequenos (≤ 480px) */
@@ -193,37 +306,21 @@ main {
     #social-section aside.social-links {
         display: none;
     }
+
+    .home-hero_container {
+        padding: 3rem;
+    }
+
+    .heading-primary {
+        font-size: 18px;
+    }
+
+    .text-primary {
+        font-size: 1.2rem;
+    }
+
+    .btn--bg {
+        padding: 1.2rem 3.5rem;
+        font-size: 1rem;
+    }
 }
-
-/* inicio do menu com design bonito */
-
-.nav-link {
-    text-decoration: none;
-    position: relative;
-    transition: all 0.3s ease;
-}
-
-.nav-item:hover {
-    transform: translateY(-3px);
-    transition: transform 0.3s ease;
-}
-
-.nav-link::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: -8px;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background-color: #A6A6A6;
-    transform: scaleY(0);
-    transform-origin: bottom;
-    transition: transform 0.3s ease;
-}
-
-.nav-link:hover::before {
-    transform: scaleY(1);
-}
-
-/* final do menu com design bonito */
